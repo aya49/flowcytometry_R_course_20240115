@@ -48,15 +48,31 @@ spillover <- flowCore::keyword(f)$SPILL
 f <- flowCore::compensate(f, spillover=spillover)
 
 ## 1.2 logicle transform ####
+
+# let's look at the before transformation plot
+flowDensity::plotDens(f, channels=c("BV510-A", "BV786-A"))
+
+# transform
 transformList <- flowCore::estimateLogicle(f, channels=colnames(spillover))
 f <- flowCore::transform(f, transformList)
 
-# let's look at the Time vs FSC-A plot to see the flow of cells
-flowDensity::plotDens(f, channels=c("Time", "FSC-A"))
+transformList <- flowCore::estimateLogicle(f1, channels=colnames(spillover))
+f1t <- flowCore::transform(f1, transformList)
+
+# and the before compensation plots
+flowDensity::plotDens(f1t, channels=c("BV510-A", "BV786-A"))
+
+# let's look at the after compensation + transformation plot
+flowDensity::plotDens(f, channels=c("BV510-A", "BV786-A"))
+
 
 ## 1.3 cleaning; see res_dir for plot ####
 ## parameter: Mean Absolute Deviation (MAD) distance (decrease = less strict)
 ## parameter: IsolationTree (IT) (decrease = more strict)
+
+# let's look at the Time vs FSC-A plot to see the flow of cells
+flowDensity::plotDens(f, channels=c("Time", "FSC-A"))
+
 channels <- c(1, 3, 5:14, 18, 21)
 res_dir <- "/home/maruko/projects/temp" # where to save PeacoQC plot
 fmr <- PeacoQC::RemoveMargins(f, channels=channels, output="full")

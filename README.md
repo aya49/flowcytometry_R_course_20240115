@@ -2,7 +2,7 @@
 
 This course is a 4 day x 4 hour course instructed by Alice Yue, hosted on Physalia: https://www.physalia-courses.org/courses-workshops/flow-cytometry/
 
-- **Date and time**: 2024-01-15 - 2022-01-18 @ 16:00-18:00 CEST (7:00-11:00 PST) (11:00-2:00 BJT)
+- **Date and time**: 2024-01-15 - 2024-01-18 @ 16:00-18:00 CEST (7:00-11:00 PST) (11:00-2:00 BJT)
 - **Instructor**: Alice Yue (Metafora-biosystems, Paris France, Vancouver Canada)
 - **Level**: Beginner-Intermediate
 
@@ -17,17 +17,24 @@ This course is a 4 day x 4 hour course instructed by Alice Yue, hosted on Physal
 - Describe and execute each step in the flow cytometry data analytics pipeline in R/Bioconductor.
 - Be comfortable with interpreting and eliciting conclusions from the results of the flow cytometry data analytics pipeline.
 
+## Pre-requisites
+
+Before starting,
+
+- Install [R](https://www.r-project.org/) and [Rstudio](https://www.rstudio.com/categories/rstudio-ide/): https://learnr-examples.shinyapps.io/ex-setup-r/
+- Install required R packages using script: [02_packages](02_packages.R)
+
 ## Schedule
 
 Support over Slack will be available throughout the course: http://physaliaflowcytometry.slack.com/
 
-| Date       | Session (link to slides) | Script(s) | Practice activities |
-|------------|--------------------------|-----------|---------------------|
-| Day 1 | 01: [Background on flow cytometry](https://docs.google.com/presentation/d/1O1-l9bhTNjxBxotQkL2kOLpn5keE8tBXuIMzRn0bMw8/edit?usp=sharing) | | Download [sangerP2.fcs](https://drive.google.com/file/d/1PpSM93GTj9zejVDZzD89_k3sx7Lc-TQl/view?usp=sharing), it will be used for sessions 4\&5|
-| Day 1 | 02: [Beginner's guide to R](https://docs.google.com/presentation/d/1PMrVL7BRuhdmD3DsEcP2uYgE3KZIGxtoLDoIkv7s9Bs/edit?usp=sharing) | [01_intro_to_R.R](01_intro_to_R.R), [01.5_intro_to_R.R](01.5_intro_to_R.R), [02_packages](02_packages.R) | Search for "# TRY" in script(s); install the packages in [02_packages](02_packages.R). |
-| Day 2 | 03: [Preprocessing flow cytometry data](https://docs.google.com/presentation/d/1HC29MJrkoxpMI59Ezz6yABd1xVn_ZyOjv_SpesqVRKo/edit?usp=sharing) | [01.5_intro_to_R.R](01.5_intro_to_R.R), [03_preprocess.R](03_preprocess.R), [03.5_preprocess_loop.csv.R](03.5_preprocess_loop.csv.R) | Review the script. |
-| Day 3 | 04: [Cell population identification using 2D gating](https://docs.google.com/presentation/d/1dANaxK4I1pclu0IcbQ0UYHcVlsWOk_ni8Otkx_m61gw/edit?usp=sharing) | [04_gating.R](04_gating.R) (full: [04_gating_full.R](04_gating_full.R)), [05_gating_stats.R](05_gating_stats.R) | Complete the first scripts. Review the last script. |
-| Day 4 | 05: [Cell population identification using clustering](https://docs.google.com/presentation/d/11bTFEjaQcLnSFef3A8xxEl1a37QcIRJCNrEmvscBUVk/edit?usp=sharing) | [06_gating_clustering](06_gating_clustering.R), [07_clustering.R](07_clustering.R) | Search for "# TRY" in script(s) :) |
+| Date       | Session (link to slides) |
+|------------|--------------------------|
+| Day 1 | 01: [Background on flow cytometry](https://docs.google.com/presentation/d/1qkEWJLE6fFMY-fGJ1V7cxGwj2TlhV8ybRnwtupt3O7o/edit?usp=drive_link); Download [sangerP2.fcs](https://drive.google.com/file/d/1PpSM93GTj9zejVDZzD89_k3sx7Lc-TQl/view?usp=sharing), it will be used for sessions 4\&5| 
+| Day 1 | 02: [Beginner's guide to R](https://docs.google.com/presentation/d/1oPUWVpwM1-60sFgXknvmElf8yqwHsxnLGJIOeUEWtVs/edit?usp=drive_link) |
+| Day 2 | 03: [Preprocessing flow cytometry data](https://docs.google.com/presentation/d/18mVxUs6g5fCtY68M-S_wVcV2qqm4dsp9yMjiaqLHOe0/edit?usp=drive_link) |
+| Day 3 | 04: [Cell population identification using 2D gating](https://docs.google.com/presentation/d/14UsDaiAsvemXUoEh5pP47G5NU8TVcMrGVS39grAP1X0/edit?usp=drive_link) |
+| Day 4 | 05: [Cell population identification using clustering](https://docs.google.com/presentation/d/1Hc1-azirEF6bsODBX_G3uehJ7hWcHmaAv68hUMtIn_Y/edit?usp=drive_link) |
 
 
 **Schedule description**:

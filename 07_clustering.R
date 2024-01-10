@@ -57,9 +57,9 @@ fc <- as.numeric(FlowSOM::GetMetaclusters(fc_))
 
 
 ## sample data to reduce runtime/memory consumption
+# ensure there are points from each cell population and cluster are sampled
 ffsample <- sample(which(rowSums(cpops_matrix)>0), n_sample)
 
-# ensure there are points from each cluster sampled
 for (i in unique(pc)) {
     clusti <- which(pc==i)
     if (!any(clusti%in%ffsample)) {
@@ -80,6 +80,14 @@ for (i in seq_len(ncol(cpops_matrix))) {
 }
 ffs <- flowCore::exprs(ff)[ffsample, names(markers)]
 
+## make 2D scatterplots
+print(names(markers))
+# choose to markers to plot!
+df <- data.frame(marker1=ffs[,c("PerCP-Cy5-5-A")],
+                 marker2=ffs[,c("APC-A")],
+                 cluster=factor(fc[ffsample])) # prepare data frame
+ggplot2::ggplot(df, ggplot2::aes(x=marker1, y=marker2, colour=cluster)) + 
+    ggplot2::geom_point(size=.1)
 
 ## reduce dimensionality of data to 2D
 t2 <- Rtsne::Rtsne(ffs)$Y

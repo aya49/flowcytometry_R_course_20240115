@@ -12,16 +12,18 @@
 1 + 1
 2 * 3
 8 / 2
-(2 + 3) * 5
+1 / (2 + ((2 + 3) * 5))
 
+# variables, used to store stuff
 x1 <- 5
 x1
 
-x1 <- 1 # replaces previously assignmed value, 5
+x1 <- 1 # replaces previously assigned value
 x1
 
 x2 <- 2
 x3 <- x1 + x2
+x3
 
 
 # strings, a sequence of characters
@@ -158,6 +160,14 @@ if (x1 > 25 | x1 < 15) {
 
 
 ## loops: for, while
+j <- 1
+for (i in seq_len(10)) {
+    print(i)
+    print(j)
+    j <- j + i
+}
+print(j)
+
 for (i in c(3:10)) {
     print(i)
 }
@@ -167,6 +177,7 @@ while (i <= 10) {
     print(i)
     i <- i + 1
 }
+print(i)
 
 
 ## functions, a set of pre-written code

@@ -18,11 +18,13 @@
 #   m <- matrix(0, nrow=2, ncol=3)
 #   write.csv(m, "path/to/file.csv")
 
-# specify path to folder containing all .fcs files you want to analyze
 folder_path <- "path/to/folder"
+# e.g. linux: /home/alice/projects/ 20220729\ physalia\ course/flowcytometry_R
+# e.g. you can also right click your file and click "Copy path" to see here your file is located
 
-# list .fcs files in folder
+# list all files in folder
 fcs_paths <- list.files(folder_path, full.names=TRUE)
+# list only files that end ($) in ".fcs"
 fcs_paths <- fcs_paths[grepl("[.]fcs$", fcs_paths, ignore.case=TRUE)]
 
 # old and new folder name
