@@ -13,6 +13,8 @@
 2 * 3
 8 / 2
 1 / (2 + ((2 + 3) * 5))
+2^3
+sqrt(9)
 
 # variables, used to store stuff
 x1 <- 5
