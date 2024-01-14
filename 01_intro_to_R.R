@@ -6,7 +6,7 @@
 # Use comments to tell the reader what you are doing (documentation).
 # Comments are not run.
 
-## variables
+## variables ####
 
 # numerics, used to perform arithmetics
 1 + 1
@@ -68,7 +68,7 @@ l1[c(1:3)]
 l1[["c"]]
 
 
-## matrices; dimensions, column/row naming, indexing
+## matrices; dimensions, column/row naming, indexing ####
 sm <- matrix("a", nrow=3, ncol=2)
 sm
 ncol(sm)
@@ -114,7 +114,7 @@ d[["name"]] # columns can be accessed like a list element
 d[["age"]]
 
 
-## if condition
+## if condition ####
 x1 <- 10
 
 if (x1 < 10) {
@@ -159,7 +159,7 @@ if (x1 > 25 | x1 < 15) {
 }
 
 
-## loops: for, while
+## loops: for, while ####
 j <- 1
 for (i in seq_len(10)) {
     print(i)
@@ -180,7 +180,7 @@ while (i <= 10) {
 print(i)
 
 
-## functions, a set of pre-written code
+## functions, a set of pre-written code ####
 ## to see a description of the function, type "?" in front of it
 ?print
 ?length
