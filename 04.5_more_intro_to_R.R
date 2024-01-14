@@ -1,4 +1,4 @@
-## example R code (intro to R part 2)
+## example R code (intro to R): TRUE/FALSE variables
 ## author: alice yue
 
 
