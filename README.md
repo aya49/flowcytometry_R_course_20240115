@@ -3,7 +3,7 @@
 This course is a 4 day x 4 hour course instructed by Alice Yue, hosted on Physalia: https://www.physalia-courses.org/courses-workshops/flow-cytometry/
 
 - **Date and time**: 2024-01-15 - 2024-01-18 @ 16:00-18:00 CEST (7:00-11:00 PST) (11:00-3:00 BJT)
-- **Instructor**: Alice Yue (Metafora-biosystems, Paris France, Vancouver Canada)
+- **Instructor**: Alice Yue (Metafora-biosystems)
 - **Level**: Beginner-Intermediate
 
 **Overview**: Flow cytometry is a gold standard in the analysis of immune cells for clinical diagnosis and research. This course introduces what flow cytometry is and why we use it to analyze cell population composition in biological samples. We will learn about best practices for how to analyze flow cytometry data using R/Bioconductor. Said practices include: preprocessing of the data (compensation, transformation, and quality control), multi-dimensional cell population identification via clustering, and visualizing the results in 2D. These tools can be applied to all types of cytometry including flow, mass, and spectral.
