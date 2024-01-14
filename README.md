@@ -2,7 +2,7 @@
 
 This course is a 4 day x 4 hour course instructed by Alice Yue, hosted on Physalia: https://www.physalia-courses.org/courses-workshops/flow-cytometry/
 
-- **Date and time**: 2024-01-15 - 2024-01-18 @ 16:00-18:00 CEST (7:00-11:00 PST) (11:00-2:00 BJT)
+- **Date and time**: 2024-01-15 - 2024-01-18 @ 16:00-18:00 CEST (7:00-11:00 PST) (11:00-3:00 BJT)
 - **Instructor**: Alice Yue (Metafora-biosystems, Paris France, Vancouver Canada)
 - **Level**: Beginner-Intermediate
 
