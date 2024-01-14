@@ -29,12 +29,12 @@ Before starting,
 Support over Slack will be available throughout the course: http://physaliaflowcytometry.slack.com/
 
 - Day 1
-    - [01] [Background on flow cytometry](https://docs.google.com/presentation/d/1qkEWJLE6fFMY-fGJ1V7cxGwj2TlhV8ybRnwtupt3O7o/edit?usp=drive_link): This session focuses on the purpose of flow cytometry, a brief overview of its machinery, and its data analysis pipeline.
+    - [01] [Background on flow cytometry](https://docs.google.com/presentation/d/1qkEWJLE6fFMY-fGJ1V7cxGwj2TlhV8ybRnwtupt3O7o/edit?usp=sharing): This session focuses on the purpose of flow cytometry, a brief overview of its machinery, and its data analysis pipeline.
     - Download [sangerP2.fcs](https://drive.google.com/file/d/1PpSM93GTj9zejVDZzD89_k3sx7Lc-TQl/view?usp=sharing), it will be used for sessions 4\&5| 
-    - [02] [Beginner's guide to R](https://docs.google.com/presentation/d/1oPUWVpwM1-60sFgXknvmElf8yqwHsxnLGJIOeUEWtVs/edit?usp=drive_link): Users will learn the basics of R and we will set up the computational infrastructure required for the next sessions. For those who do not have R, for this session, please use https://posit.cloud/.
+    - [02] [Beginner's guide to R](https://docs.google.com/presentation/d/1oPUWVpwM1-60sFgXknvmElf8yqwHsxnLGJIOeUEWtVs/edit?usp=sharing): Users will learn the basics of R and we will set up the computational infrastructure required for the next sessions. For those who do not have R, for this session, please use https://posit.cloud/.
 - Day 2
-    - [03] [Preprocessing flow cytometry data](https://docs.google.com/presentation/d/1HC29MJrkoxpMI59Ezz6yABd1xVn_ZyOjv_SpesqVRKo/edit?usp=sharing): We will learn about the theory behind preprocessing of flow cytometry samples.
+    - [03] [Preprocessing flow cytometry data](https://docs.google.com/presentation/d/18mVxUs6g5fCtY68M-S_wVcV2qqm4dsp9yMjiaqLHOe0/edit?usp=sharing): We will learn about the theory behind preprocessing of flow cytometry samples.
 - Day 3
-    - [04] [Cell population identification using 2D gating](https://docs.google.com/presentation/d/18mVxUs6g5fCtY68M-S_wVcV2qqm4dsp9yMjiaqLHOe0/edit?usp=drive_link): Participants will learn about how flow cytometrists traditionally identify cell populations in preprocessed samples using 2D gating. We will go over an example of an existing manual 2D gating from flowJo and how it is used to compare cell population abundances across samples.
+    - [04] [Cell population identification using 2D gating](https://docs.google.com/presentation/d/14UsDaiAsvemXUoEh5pP47G5NU8TVcMrGVS39grAP1X0/edit?usp=sharing): Participants will learn about how flow cytometrists traditionally identify cell populations in preprocessed samples using 2D gating. We will go over an example of an existing manual 2D gating from flowJo and how it is used to compare cell population abundances across samples.
 - Day 4
-    - [05] [Cell population identification using clustering](https://docs.google.com/presentation/d/1Hc1-azirEF6bsODBX_G3uehJ7hWcHmaAv68hUMtIn_Y/edit?usp=drive_link): We will analyze the same samples using clustering in R and learn how to interpret the results.
+    - [05] [Cell population identification using clustering](https://docs.google.com/presentation/d/1Hc1-azirEF6bsODBX_G3uehJ7hWcHmaAv68hUMtIn_Y/edit?usp=sharing): We will analyze the same samples using clustering in R and learn how to interpret the results.
