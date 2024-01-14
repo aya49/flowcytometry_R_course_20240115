@@ -15,6 +15,10 @@
 1 / (2 + ((2 + 3) * 5))
 2^3
 sqrt(9)
+log10(100)
+log2(3)
+log(5)
+
 
 # variables, used to store stuff
 x1 <- 5
