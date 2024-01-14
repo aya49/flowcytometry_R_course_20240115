@@ -1,4 +1,4 @@
-## example R code (intro to R) #2
+## example R code (intro to R): if/else conditions, loops, functions, plotting
 ## author: alice yue
 
 ## if condition ####
@@ -125,6 +125,42 @@ r1
 
 # if you write many functions, you can bundle these functions into a "package"
 # and share it with the community :)
+
+
+## plotting ####
+m2 <- matrix(c(1:10), ncol=2, nrow=5)
+m2
+colnames(m2) <- c("x", "y")
+plot(m2)
+lines(m2)
+abline(h=7)
+abline(v=2)
+abline(h=c(8,9))
+abline(v=c(2,3), lty="dashed", col="red")
+graphics.off() # close plot
+
+# we can also change the size and colour of our points
+plot(m2, cex=0.1)
+plot(m2, cex=0.5)
+plot(m2, cex=1)
+
+plot(m2, col="red")
+plot(m2, cex=2, col="red")
+
+# we can also customize the size for each row
+plot(m2, cex=c(0.1, 0.5, 1, 2, 3)) 
+plot(m2, cex=c(0.1, 0.5, 1, 2, 3), col=c("red", "blue", "green", "black", "yellow")) 
+
+# since size and colours are vectors, we can use condition indexing!
+colours <- rep("red", 5)
+colours
+m2i <- m2[,"x"] < 2 & m2[,"y"] < 8
+colours[m2i] <- "blue"
+colours
+plot(m2, cex=0.5, col=colours)
+
+# add a title with main!
+plot(m2, cex=0.5, col=colours, main="my first plot!")
 
 
 ## TRY: practice problems ####
