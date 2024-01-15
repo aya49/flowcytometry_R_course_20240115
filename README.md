@@ -35,10 +35,11 @@ Support over Slack will be available throughout the course: http://physaliaflowc
     - **Scripts**: [01_intro_to_R.R](./01_intro_to_R.R), [02_packages.R](./02_packages.R)
 - Day 2
     - [02] [Preprocessing flow cytometry data](https://docs.google.com/presentation/d/18mVxUs6g5fCtY68M-S_wVcV2qqm4dsp9yMjiaqLHOe0/edit?usp=sharing): We will learn about the theory behind preprocessing of flow cytometry samples.
+    - [02.2] [More R](https://docs.google.com/presentation/d/1FNAUlUjOGJhpaD97DDVfWLyjieVr9Xo__QLZs8hrHbI/edit?usp=sharing).
     - **Scripts**: [03_preprocess.R](./03_preprocess.R), [03.1_more_intro_to_R_ifelse_loop_func_plot.R](./03.1_more_intro_to_R_ifelse_loop_func_plot.R), [03.2_intro_to_R_fileIO_loop.R](./03.2_intro_to_R_fileIO_loop.R) (example solution: [03.3_preprocess_loop.R](./03.3_preprocess_loop.R))
 - Day 3
-    - [04] [Cell population identification using 2D gating](https://docs.google.com/presentation/d/14UsDaiAsvemXUoEh5pP47G5NU8TVcMrGVS39grAP1X0/edit?usp=sharing): Participants will learn about how flow cytometrists traditionally identify cell populations in preprocessed samples using 2D gating. We will go over an example of an existing manual 2D gating from flowJo and how it is used to compare cell population abundances across samples.
+    - [03] [Cell population identification using 2D gating](https://docs.google.com/presentation/d/14UsDaiAsvemXUoEh5pP47G5NU8TVcMrGVS39grAP1X0/edit?usp=sharing): Participants will learn about how flow cytometrists traditionally identify cell populations in preprocessed samples using 2D gating. We will go over an example of an existing manual 2D gating from flowJo and how it is used to compare cell population abundances across samples.
     - **Scripts**: [04_gating.R](./04_gating.R) (example solution: [04_gating_full.R](./04_gating_full.R)), [05_gating_stats.R](./05_gating_stats.R), (optional: [04.5_intro_to_R_truefalse.R](./04.5_intro_to_R_truefalse.R))
 - Day 4
-    - [05] [Cell population identification using clustering](https://docs.google.com/presentation/d/1Hc1-azirEF6bsODBX_G3uehJ7hWcHmaAv68hUMtIn_Y/edit?usp=sharing): We will analyze the same samples using clustering in R and learn how to interpret the results.
+    - [04] [Cell population identification using clustering](https://docs.google.com/presentation/d/1Hc1-azirEF6bsODBX_G3uehJ7hWcHmaAv68hUMtIn_Y/edit?usp=sharing): We will analyze the same samples using clustering in R and learn how to interpret the results.
     - **Scripts**: [06_gating_clustering.R](./06_gating_clustering.R), [07_clustering.R](./07_clustering.R)
