@@ -32,7 +32,7 @@ Support over Slack will be available throughout the course: http://physaliaflowc
     - [01] [Background on flow cytometry](https://docs.google.com/presentation/d/1qkEWJLE6fFMY-fGJ1V7cxGwj2TlhV8ybRnwtupt3O7o/edit?usp=sharing): This session focuses on the purpose of flow cytometry, a brief overview of its machinery, and its data analysis pipeline.
     - Download [sangerP2.fcs](https://drive.google.com/file/d/1PpSM93GTj9zejVDZzD89_k3sx7Lc-TQl/view?usp=sharing), it will be used for sessions 4\&5| 
     - [01.2] [Beginner's guide to R](https://docs.google.com/presentation/d/1oPUWVpwM1-60sFgXknvmElf8yqwHsxnLGJIOeUEWtVs/edit?usp=sharing): Users will learn the basics of R and we will set up the computational infrastructure required for the next sessions. For those who do not have R, for this session, please use https://posit.cloud/.
-    - **Scripts**: [01_intro_to_R.R](./01_intro_to_R.R), [01.2_packages.R](./01.2_packages.R)
+    - **Scripts**: [01.1_intro_to_R.R](./01.1_intro_to_R.R), [01.2_packages.R](./01.2_packages.R)
 - Day 2
     - [02] [Preprocessing flow cytometry data](https://docs.google.com/presentation/d/18mVxUs6g5fCtY68M-S_wVcV2qqm4dsp9yMjiaqLHOe0/edit?usp=sharing): We will learn about the theory behind preprocessing of flow cytometry samples.
     - [02.2] [More R](https://docs.google.com/presentation/d/1FNAUlUjOGJhpaD97DDVfWLyjieVr9Xo__QLZs8hrHbI/edit?usp=sharing).
