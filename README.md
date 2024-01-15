@@ -26,7 +26,7 @@ Before starting,
 
 ## Schedule
 
-Support over Slack will be available throughout the course: http://physaliaflowcytometry.slack.com/
+Support over Slack will be available throughout the course: https://flowcytometry-tzj1577.slack.com/
 
 - Day 1
     - [01] [Background on flow cytometry](https://docs.google.com/presentation/d/1qkEWJLE6fFMY-fGJ1V7cxGwj2TlhV8ybRnwtupt3O7o/edit?usp=sharing): This session focuses on the purpose of flow cytometry, a brief overview of its machinery, and its data analysis pipeline.
