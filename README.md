@@ -22,7 +22,7 @@ This course is a 4 day x 4 hour course instructed by Alice Yue, hosted on Physal
 Before starting,
 
 - Install [R](https://www.r-project.org/) and [Rstudio](https://www.rstudio.com/categories/rstudio-ide/): https://learnr-examples.shinyapps.io/ex-setup-r/
-- Install required R packages using script: [02_packages](02_packages.R)
+- Install required R packages using script: [01.2_packages](01.2_packages.R)
 
 ## Schedule
 
