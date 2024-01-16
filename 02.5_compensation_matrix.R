@@ -1,6 +1,5 @@
 ## creates the unmixing and compensation spill over matrix 
 ## for spectral and flow cytometry data.
-## author: alice yue
 
 ## unmixing for spectral cytometry ####
 
