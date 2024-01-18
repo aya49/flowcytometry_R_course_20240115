@@ -8,8 +8,8 @@ library("flowCore")
 library("PeacoQC")
 
 # path to fcs file 
-fcs_path <- system.file("extdata", "111.fcs", package="PeacoQC")
-# fcs_path <- "/home/user/folder/file.fcs"
+# fcs_path <- system.file("extdata", "111.fcs", package="PeacoQC")
+fcs_path <- "path/to/sangerP2.fcs"
 
 # load fcs file
 f <- flowCore::read.FCS(fcs_path)
