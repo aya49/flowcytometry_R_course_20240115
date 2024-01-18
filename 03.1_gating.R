@@ -212,7 +212,7 @@ ff <- flowWorkspace::cytoframe_to_flowFrame(
 gate_cd11b_high <- flowDensity::deGate(
     ff, channel="BV510-A", 
     use.percentile=TRUE, percentile=0.9999999)
-gate_ly6c_high <- flowDensity::deGate(
+gate_cd5_high <- flowDensity::deGate(
     ff, channel="APC-A", 
     use.percentile=TRUE, percentile=0.9999999)
 
@@ -221,20 +221,20 @@ gate_cd11b <- flowDensity::deGate(ff, channel="BV510-A")
 temp <- flowDensity::flowDensity(
     ff, channels=c("APC-A", "BV510-A"), 
     position=c(NA,TRUE), gates=c(NA, gate_cd11b)) #upper half
-gate_ly6c <- flowDensity::deGate(
+gate_cd5 <- flowDensity::deGate(
     flowDensity::getflowFrame(temp), channel="APC-A")
 
 # register gates into gs
 gate <- flowCore::rectangleGate(
     filterId="granulocytes", 
-    "APC-A"=c(gate_ly6c, gate_ly6c_high), # include all
+    "APC-A"=c(gate_cd5, gate_cd5_high), # include all
     "BV510-A"=c(gate_cd11b, gate_cd11b_high))
 node <- flowWorkspace::gs_pop_add(gs, gate, parent="lymphocytes")
 flowWorkspace::recompute(gs)
 
 fd_gran <- flowDensity::flowDensity(
     ff, channels=c("APC-A", "BV510-A"), 
-    position=c(TRUE,TRUE), gates=c(gate_ly6c, gate_cd11b))
+    position=c(TRUE,TRUE), gates=c(gate_cd5, gate_cd11b))
 fd_notgran <- flowDensity::notSubFrame(
     ff, channels=c("APC-A", "BV510-A"), 
     position="logical", gates="missing", fd_gran@filter)
@@ -254,7 +254,7 @@ d <- density(flowCore::exprs(
     flowDensity::getflowFrame(temp))[,"APC-A"], na.rm=TRUE)
 plot(d, ylab="", axes=FALSE, main="lymphocytes > not/granuloctyes",
      xlim=range(flowCore::exprs(ff)[,"APC-A"], na.rm=TRUE))
-abline(v=gate_ly6c, lty="dashed", col="red")
+abline(v=gate_cd5, lty="dashed", col="red")
 
 par(mar=c(5,0,1,3))
 d <- density(flowCore::exprs(ff)[,"BV510-A"])
@@ -263,7 +263,7 @@ abline(h=gate_cd11b, lty="dashed", col="red")
 
 par(mar=c(5,5,1,1))
 flowDensity::plotDens(ff, channels=c("APC-A", "BV510-A"), main="")
-abline(v=gate_ly6c, h=gate_cd11b, lty="dashed", col="red")
+abline(v=gate_cd5, h=gate_cd11b, lty="dashed", col="red")
 graphics.off()
 
 
