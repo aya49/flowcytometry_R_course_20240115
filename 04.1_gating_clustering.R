@@ -10,7 +10,7 @@ library("Rphenograph") # also imports igraph package
 library("FlowSOM")
 
 # directory to save results in
-res_dir <- "/home/maruko/projects/gating"
+res_dir <- getwd()
 
 # set seed for randomness
 set.seed(4)
@@ -82,20 +82,35 @@ gp2f
 ggcyto::autoplot(gs[[1]], "folbcells", bins=100)
 
 
-# # nonconvex hull function outdated: devtools::install_github("andrewzm/INLA")
+# # fm_nonconvex_hull_inla() function is currently not working :( 
+# install.packages("fmesher")
 # # register gates into gs
 # cluster <- 1 # choose a cluster
-# nchull <- INLA::inla.nonconvex.hull(ff2D[clusts==cluster,, drop=FALSE])
+# nchull <- fmesher::fm_nonconvex_hull_inla(
+#     ff2D[fc==cluster,, drop=FALSE])$loc[,1:2]
+# colnames(nchull) <- colnames(ff2D)
+# 
+# flowDensity::plotDens(ff, channels=c("BV421-A","PE-A"))
+# lines(nchull)
+# 
+# # register gate into gating set
 # gate <- flowCore::polygonGate(.gate=nchull)
 # node <- flowWorkspace::gs_pop_add(gs, gate, name="folbcells", parent="b2bcells")
 # flowWorkspace::recompute(gs)
 
+fd <- flowDensity::flowDensity(
+    ff, channels=c("BV421-A","PE-A"), scale=0.9, 
+    position=c(TRUE, TRUE), gates=c(2, 1), ellip.gate=TRUE)
 
-# TRY:
-#   <try applying clustering to other gates!>
-#   <try changing paramter values for clustering to see if you get different results!>
-
+flowDensity::plotDens(ff, channels=c("BV421-A","PE-A"))
+lines(fd@filter)
 
 ## save gating set! ####
 # flowWorkspace::save_gs(gs, path=paste0(res_dir, "/gs2"))
 # gs <- flowWorkspace::load_gs(paste0(res_dir, "/gs"))
+
+
+# TRY: practice problems
+# 1. try applying clustering to other gates! Can you find one where clustering works very well on?
+# 2. try changing paramter values for clustering to see if you get different results!
+
