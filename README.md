@@ -43,3 +43,7 @@ Support over Slack will be available throughout the course: https://flowcytometr
 - Day 4
     - [04] [Cell population identification using clustering](https://docs.google.com/presentation/d/1Hc1-azirEF6bsODBX_G3uehJ7hWcHmaAv68hUMtIn_Y/edit?usp=sharing): We will analyze the same samples using clustering in R and learn how to interpret the results.
     - **Scripts**: [04.1_gating_clustering.R](./04.1_gating_clustering.R), [04.2_clustering.R](./04.2_clustering.R)
+- Extras
+    - [Batch analysis & panel merging](https://docs.google.com/presentation/d/12ZFAjT_e3CFoJjzCW-dexcKvQrgYPKjtWm_8m8ynnZc/edit?usp=sharing)
+    - [Differential abundance analysis for all possible cell populations](https://docs.google.com/presentation/d/1Aa7jFPxEdArfQalY4d87vy7TMsnRYOwndczcr9Q_Uj0/edit?usp=sharing)
+    - **Scripts**: [05.1_batch_correction.R](./05.1_batch_correction.R), [vignette](https://github.com/aya49/flowGraph/blob/master/fcs_processing_guide.R), [example script](https://github.com/aya49/flowGraph/blob/master/vignettes/flowGraph.Rmd)
