@@ -73,7 +73,7 @@ flowDensity::plotDens(f, channels=c("BV510-A", "BV786-A"))
 # let's look at the Time vs FSC-A plot to see the flow of cells
 flowDensity::plotDens(f, channels=c("Time", "FSC-A"))
 
-channels <- c(1, 3, 5:14, 18, 21)
+channels <- c(7:18)
 res_dir <- "/home/maruko/projects/temp" # where to save PeacoQC plot
 fmr <- PeacoQC::RemoveMargins(f, channels=channels, output="full")
 pQC <- PeacoQC::PeacoQC(fmr[["flowframe"]], channels=channels,
