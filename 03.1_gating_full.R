@@ -154,6 +154,34 @@ gc()
 
 
 ## 2.3 gating live > lymphocytes ####
+
+# ## THE LOOP VERSION OF GATING IF YOU HAVE MANY FILES (not tested) ####
+# # get gate values
+# gates <- fsApply(fs, function(ff) {
+#   ff <- flowWorkspace::cytoframe_to_flowFrame(
+#     as(flowWorkspace::gs_pop_get_data(
+#         gs, "live"), Class="list")[[1]] )
+#   gate_ssca_high <- flowDensity::deGate(
+#     ff, channel="SSC-A", 
+#     use.percentile=TRUE, percentile=0.9999999)
+#   gate_fsca <- flowDensity::deGate(
+#     ff, channel="FSC-A")
+#   return(c(gate_ssca_high, gate_fsca, gate_fsca_high))
+# })
+# # apply gates to make a list of gates
+# rg <- lapply(1:nrow(gates), function(x) {
+#   gate <- flowCore::rectangleGate(
+#     filterId="lymphocytes", 
+#     "FSC-A"=c(gates[x,2], gates[x,3]), # include all
+#     "SSC-A"=c(0, gates[x,1]))
+#   return(gate)
+# })
+# # give the gates the same name as your files
+# names(rg) <- sampleNames(fs)
+# # register your gate
+# nodeID1<-flowWorkspace::add(gs, rg)
+# recompute(gs)
+
 ff <- flowWorkspace::cytoframe_to_flowFrame(
     as(flowWorkspace::gs_pop_get_data(
         gs, "live"), Class="list")[[1]] )
