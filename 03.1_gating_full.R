@@ -167,7 +167,7 @@ gc()
 #   return(c(gate_ssca_high, gate_fsca, gate_fsca_high))
 # })
 # # apply gates to make a list of gates
-# rg <- lapply(1:nrow(gates), function(x) {
+# rg <- lapply(1:length(gates), function(x) {
 #   gate <- flowCore::rectangleGate(
 #     filterId="lymphocytes", 
 #     "FSC-A"=c(gates[[x]][2], gates[[x]][3]), # include all
