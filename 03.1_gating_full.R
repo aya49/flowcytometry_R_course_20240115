@@ -157,10 +157,8 @@ gc()
 
 # ## THE LOOP VERSION OF GATING IF YOU HAVE MANY FILES (not tested) ####
 # # get gate values
-# gates <- fsApply(fs, function(ff) {
-#   ff <- flowWorkspace::cytoframe_to_flowFrame(
-#     as(flowWorkspace::gs_pop_get_data(
-#         gs, "live"), Class="list")[[1]] )
+# gates <- lapply(as(flowWorkspace::gs_pop_get_data(gs, "live"), Class="list"), function(fc) {
+#   ff <- flowWorkspace::cytoframe_to_flowFrame(fc)
 #   gate_ssca_high <- flowDensity::deGate(
 #     ff, channel="SSC-A", 
 #     use.percentile=TRUE, percentile=0.9999999)
@@ -172,7 +170,7 @@ gc()
 # rg <- lapply(1:nrow(gates), function(x) {
 #   gate <- flowCore::rectangleGate(
 #     filterId="lymphocytes", 
-#     "FSC-A"=c(gates[x,2], gates[x,3]), # include all
+#     "FSC-A"=c(gates[[x]][2], gates[[x]][3]), # include all
 #     "SSC-A"=c(0, gates[x,1]))
 #   return(gate)
 # })
